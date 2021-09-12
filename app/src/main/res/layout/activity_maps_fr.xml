@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/dashback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueColor">
+
+        <ImageView
+            android:id="@+id/dashbak"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:foregroundGravity="right"
+            android:src="@drawable/menu_1"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/belowlayout"
+        android:layout_below="@+id/dashback"
+        android:layout_marginBottom="0dp"
+        tools:context=".Maps_fr" />
+
+    <RelativeLayout
+        android:id="@+id/belowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="TIME"
+            android:textColor="@color/blueColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="53dp"
+            android:layout_toStartOf="@+id/button7"
+            android:layout_toLeftOf="@+id/button7"
+            android:text="DISTANCE"
+            android:textColor="@color/blueColor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/button7"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/arrow" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/map"
+        android:layout_alignBottom="@+id/belowlayout"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</RelativeLayout>

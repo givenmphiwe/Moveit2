@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "975622199028",
+    "project_id": "move-it-78630",
+    "storage_bucket": "move-it-78630.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975622199028:android:3fb20f67b637c74624b0a1",
+        "android_client_info": {
+          "package_name": "given.Consultants.moveit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975622199028-etdrnp58f7795h2a7fl724sqgf8jb4ea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "given.Consultants.moveit",
+            "certificate_hash": "b17ba7c2da618e429f0d503e0508cef36fba28e4"
+          }
+        },
+        {
+          "client_id": "975622199028-43au76r1fup28tplm3mm3bbl2lc9gi25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW3nM-SdqAQQJp5AN2eFUMnLkKS8a8rjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975622199028-43au76r1fup28tplm3mm3bbl2lc9gi25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
